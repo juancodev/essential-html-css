@@ -1,3 +1,15 @@
+:root {
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+  --headline1: 'Roboto';
+}
+
+body {
+  color: var(--gray30);
+  font-family: var(--headline1);
+}
+
 h1 {
   font-size: 60px;
 }
@@ -12,16 +24,16 @@ h3 {
 
 header {
   font-size: 14px;
-  color: #616161;
+  color: var(--gray10);
 }
 
 header a {
-  color: #616161;
+  color: var(--gray10);
   text-decoration: none;
 }
 
 header a:hover {
-  color: #212121;
+  color: var(--gray20);
 }
 
 nav details summary {
