@@ -6,8 +6,17 @@
 }
 
 body {
+  margin: 0;
   color: var(--gray30);
   font-family: var(--headline1);
+}
+
+.hero {
+  background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/webdeveloper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 350px;
 }
 
 h1 {
@@ -38,4 +47,28 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: "" counter(titleList) ". ";
+}
+
+h3::after {
+  display: inline-block;
+  content: '';
+  width: 32px;
+  height: 4px;
+  background-color: var(--gray30);
+}
+
+pre {
+  background-color: #FEC62E;
 }
