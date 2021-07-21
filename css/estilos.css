@@ -21,14 +21,32 @@ body {
 
 h1 {
   font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+}
+
+/* h1 + p {
+  margin-block-end: 64px;
+} */
+
+hr {
+  margin-block-start: 64px;
+  margin-block-end: 64px;
+  border-color: var(--gray10);
 }
 
 h2 {
   font-size: 2em;
+  margin-block-start: 64px;
+  margin-block-end: 40px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 24px;
+  margin-block-start: 16px;
+  margin-block-end: 24px;
+  font-weight: normal;
 }
 
 header {
@@ -50,7 +68,23 @@ nav details summary {
 }
 
 .section-content {
+  margin-block-start: 164px;
+}
+
+.section-content:first-of-type {
+  margin: 0;
+}
+
+.section-content + hr {
+  display: none;
+}
+
+.section-content {
   counter-reset: titleList;
+}
+
+.section-content img {
+  margin-block-start: 40px;
 }
 
 .section-content h3 {
@@ -59,6 +93,14 @@ nav details summary {
 
 .section-content h3::before {
   content: "" counter(titleList) ". ";
+}
+
+.section-content ol li {
+  line-height: 24px;
+}
+
+.section-content ul li {
+  margin-block-start: 16px;
 }
 
 h3::after {
@@ -71,4 +113,11 @@ h3::after {
 
 pre {
   background-color: #FEC62E;
+}
+
+blockquote {
+  margin-block-start: 32px;
+  margin-block-end: 32px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
