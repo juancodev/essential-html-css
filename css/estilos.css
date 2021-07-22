@@ -89,6 +89,7 @@ nav details summary {
 
 .section-content h3 {
   counter-increment: titleList;
+  padding-block-end: 4px;
 }
 
 .section-content h3::before {
@@ -113,6 +114,11 @@ h3::after {
 
 pre {
   background-color: #FEC62E;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+  padding-inline-start: 40px;
+  font-family: var(--headline1);
+  line-height: 24px;
 }
 
 blockquote {
@@ -120,4 +126,16 @@ blockquote {
   margin-block-end: 32px;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  font-size: 24px;
+  padding-inline-start: 16px;
+  line-height: 24px;
+  border-inline-start: 4px solid var(--gray30);
+}
+
+blockquote span {
+  color: var(--gray10);
+}
+
+blockquote span::before {
+  content: '-';
 }
