@@ -5,11 +5,32 @@
   --headline1: 'Roboto';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: var(--gray30);
   font-family: var(--headline1);
 }
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+
 
 .hero {
   background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/webdeveloper.jpg);
@@ -23,6 +44,7 @@ h1 {
   font-size: 60px;
   margin-block-start: 64px;
   margin-block-end: 16px;
+  font-weight: normal;
 }
 
 /* h1 + p {
@@ -47,11 +69,16 @@ h3 {
   margin-block-start: 16px;
   margin-block-end: 24px;
   font-weight: normal;
+  position: relative;
 }
 
 header {
+  width: 188px;
   font-size: 14px;
   color: var(--gray10);
+  position: absolute;
+  top: 64px;
+  left: -200px;
 }
 
 header a {
@@ -63,19 +90,25 @@ header a:hover {
   color: var(--gray20);
 }
 
+header li {
+  margin-block-end: 16px;
+}
+
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
 }
 
 .section-content {
   margin-block-start: 164px;
+  position: relative;
 }
 
 .section-content:first-of-type {
   margin: 0;
 }
 
-.section-content + hr {
+.section-content+hr {
   display: none;
 }
 
@@ -85,11 +118,12 @@ nav details summary {
 
 .section-content img {
   margin-block-start: 40px;
+  max-inline-size: 100%;
 }
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-block-end: 4px;
+  padding-block-end: 8px;
 }
 
 .section-content h3::before {
@@ -104,12 +138,15 @@ nav details summary {
   margin-block-start: 16px;
 }
 
-h3::after {
-  display: inline-block;
+.section-content h3::after {
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
   background-color: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  left:0;
+  bottom: 0;
 }
 
 pre {
