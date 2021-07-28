@@ -8,7 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>El blog de Juan</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
   <div class="hero"></div>
@@ -107,18 +124,18 @@
           <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
           <pre>
             <!--Esta forma podemos mostrar html dentro del navegador sin que lo pueda interpretar.-->
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-    &lt;/body&gt;
-    &lt;/html&gt;
+&lt;/body&gt;
+&lt;/html&gt;
       </pre>
           <h3 id="market">Etiquetas</h3>
           <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -159,10 +176,41 @@
             <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
           </ul>
         </section>
-        <h3>Modelo de caja</h3>
+        <div class="section-content">
+          <h2>¡Espero te sirva y te vuelvas un gran <strong>Frontend Developer</strong>!</h2>
+          <div class="slider">
+            <scrollcontainer class="slider-container">
+              <scrollpage class="slider-slide" id="img-1">
+                <img class="slider__slide-img" src="./img/fondo1.svg" height="300px" width="600px" alt="">
+              </scrollpage>
+              <scrollpage class="slider-slide" id="img-2">
+                <img class="slider__slide-img" src="./img/fondo2.svg" height="300px" width="600px" alt="">
+              </scrollpage>
+            </scrollcontainer>
+            <div class="slide-bullet-list">
+              <a href="#img-1" class="slide-bullet"></a>
+              <a href="#img-2" class="slide-bullet"></a>
+            </div>
+          </div>
+        </div>
+        <p class="mail">Si tienes alguna pregunta escríbeme a
+         <a href="mailto:montillasanchezjuancarlos@gmail.com" class="mail-ancla">montillasanchezjuancarlos@gmail.com</a>
+        </p>
       </div>
     </div>
   </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer__container-p">
+        <p>© Juan Montilla 2021</p>
+      </div>
+      <div class="footer__container-social">
+        <a href="https://www.instagram.com/juancms98/" target="_blank"><img src="./img/instagram.svg" alt="instagram"></a>
+        <a href="https://www.facebook.com/juancms98/" target="_blank"><img src="./img/facebook.svg" alt="facebook"></a>
+        <a href="https://twitter.com/juancms98" target="_blank"><img src="./img/twitter.svg" alt="twitter"></a>
+      </div>
+    </div>
+  </footer>
   <script>
     const detailsList = document.querySelectorAll('details')
     detailsList.forEach((details) => {
