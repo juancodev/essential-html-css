@@ -1,8 +1,9 @@
 :root {
-  --gray20: #251F24;
+  --gray30: #251F24;
+  --gray20: #3A3539;
   --gray10: #A5A3A5;
   --white10: #FFFFFF;
-  --headline1: 'Roboto';
+  --headline1: 'Nunito';
 }
 
 html {
@@ -13,7 +14,7 @@ body {
   margin: 0;
   color: var(--white10);
   font-family: var(--headline1);
-  background-color: var(--gray20);
+  background-color: var(--gray30);
 }
 
 .wrapper {
@@ -37,9 +38,9 @@ h1 {
   font-weight: normal;
 }
 
-/* h1 + p {
-  margin-block-end: 64px;
-} */
+section>p {
+  color: var(--gray10);
+}
 
 hr {
   margin-block-start: 64px;
@@ -48,14 +49,14 @@ hr {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 40px;
   margin-block-start: 64px;
   margin-block-end: 40px;
   font-weight: normal;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 32px;
   margin-block-start: 16px;
   margin-block-end: 24px;
   font-weight: normal;
@@ -96,7 +97,7 @@ nav summary {
   color: var(--white10);
 }
 
-details > ol {
+details>ol {
   color: var(--gray10);
 }
 
@@ -151,7 +152,7 @@ details > ol {
 }
 
 pre {
-  background-color: #FEC62E;
+  background-color: var(--gray20);
   padding-block-start: 40px;
   padding-block-end: 40px;
   padding-inline-start: 40px;
@@ -168,11 +169,13 @@ blockquote {
   margin-block-start: 32px;
   margin-block-end: 32px;
   margin-inline-start: 0;
-  margin-inline-end: 0;
   font-size: 24px;
-  padding-inline-start: 16px;
-  line-height: 24px;
-  border-inline-start: 4px solid var(--gray40);
+  line-height: 32px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  padding-inline-start: 24px;
+  background-color: var(--gray20);
+  border-radius: 8px;
 }
 
 blockquote span {
@@ -214,18 +217,27 @@ blockquote span::before {
   border-radius: 50%;
 }
 
+.is_active {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: var(--white10);
+  border-radius: 50%;
+}
+
 .mail {
-  color: var(--gray20);
+  color: var(--white10);
   margin-block: 40px;
+  text-align: center;
 }
 
 .mail-ancla {
   text-decoration: none;
-  color: var(--gray40);
+  /* color: var(--gray40); */
 }
 
 .footer {
-  background-color: var(--gray30);
+  background-color: var(--white10);
   display: flex;
   justify-content: center;
 }
@@ -236,7 +248,7 @@ blockquote span::before {
 }
 
 .footer__container-p {
-  color: #ffffff;
+  color: var(--gray30);
   font-size: 24px;
 }
 
@@ -293,7 +305,7 @@ blockquote span::before {
   }
 
   .footer {
-    background-color: var(--gray30);
+    background-color: var(--white10);
     display: flex;
     justify-content: center;
   }
@@ -303,7 +315,7 @@ blockquote span::before {
   }
 
   .footer__container-p {
-    color: #ffffff;
+    color: var(--gray30);
     font-size: 32px;
   }
 
