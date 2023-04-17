@@ -48,6 +48,7 @@ hr {
 }
 
 h2 {
+  text-shadow: 7px 4px 5px blueviolet;
   font-size: 2em;
   margin-block-start: 64px;
   margin-block-end: 40px;
@@ -237,9 +238,10 @@ blockquote span::before {
   margin-inline: 22px;
 }
 
-@media screen and (min-width: 1315px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    block-size: 338px;
+    width:auto;
+    height: 520px;
   }
   header {
     width: 188px;
@@ -272,6 +274,7 @@ blockquote span::before {
     line-height: 24px;
   }
   h1 {
+    text-shadow: 7px 4px 5px blueviolet;
     font-size: 60px;
     margin-block-start: 64px;
   }
