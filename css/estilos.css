@@ -16,6 +16,10 @@ body {
   font-family: var(--headline1);
 }
 
+img {
+  margin: 0;
+}
+
 .wrapper {
   max-inline-size: 902px;
   margin: auto;
@@ -39,13 +43,19 @@ body {
   text-transform: uppercase;
 }
 
-/* h1 + p {
-  margin-block-end: 64px;
-} */
+.summary {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.contenido-title {
+  font-size: 22px;
+  font-weight: bold;
+}
 
 hr {
-  margin-block-start: 64px;
-  margin-block-end: 64px;
+  margin-block-start: 10px;
+  margin-block-end: 25px;
   border-color: rgba(97, 97, 97, 0.2);
 }
 
@@ -112,7 +122,6 @@ nav details summary {
 }
 
 .section-content img {
-  margin-block-start: 40px;
   max-inline-size: 100%;
 }
 
