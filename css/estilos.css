@@ -3,7 +3,7 @@
   --gray30: #212429;
   --gray20: #424242;
   --gray10: #616161;
-  --headline1: 'Roboto';
+  --headline1: 'Helvetica';
 }
 
 html {
@@ -14,6 +14,10 @@ body {
   margin: 0;
   color: var(--gray40);
   font-family: var(--headline1);
+}
+
+img {
+  margin: 0;
 }
 
 .wrapper {
@@ -30,29 +34,36 @@ body {
   block-size: 50px;
 }
 
-h1 {
+.title, h1 {
   font-size: 40px;
   margin-block-start: 20px;
   margin-block-end: 16px;
   font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* h1 + p {
-  margin-block-end: 64px;
-} */
+.summary {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.contenido-title {
+  font-size: 22px;
+  font-weight: bold;
+}
 
 hr {
-  margin-block-start: 64px;
-  margin-block-end: 64px;
+  margin-block-start: 10px;
+  margin-block-end: 25px;
   border-color: rgba(97, 97, 97, 0.2);
 }
 
 h2 {
-  text-shadow: 7px 4px 5px blueviolet;
   font-size: 2em;
-  margin-block-start: 64px;
-  margin-block-end: 40px;
   font-weight: normal;
+  margin: 0;
+  padding: 10px;
 }
 
 h3 {
@@ -111,7 +122,6 @@ nav details summary {
 }
 
 .section-content img {
-  margin-block-start: 40px;
   max-inline-size: 100%;
 }
 
@@ -174,6 +184,10 @@ blockquote span {
 
 blockquote span::before {
   content: '-';
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .slider-container {
@@ -273,11 +287,7 @@ blockquote span::before {
     font-weight: bold;
     line-height: 24px;
   }
-  h1 {
-    text-shadow: 7px 4px 5px blueviolet;
-    font-size: 60px;
-    margin-block-start: 64px;
-  }
+  
   .footer {
     background-color: var(--gray30);
     display: flex;
@@ -302,39 +312,3 @@ blockquote span::before {
     margin-inline: 22px;
   }
 }
-
-/* header {
-  width: 188px;
-  font-size: 14px;
-  color: var(--gray10);
-  position: absolute;
-  top: 64px;
-  left: -200px;
-}
-
-.header {
-  position: sticky;
-  top: 0;
-}
-
-.header-content {
-  position: relative;
-}
-
-header a {
-  color: var(--gray10);
-  text-decoration: none;
-}
-
-header a:hover {
-  color: var(--gray30);
-}
-
-header li {
-  margin-block-end: 16px;
-}
-
-nav details summary {
-  font-weight: bold;
-  line-height: 24px;
-} */

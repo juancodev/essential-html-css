@@ -34,9 +34,9 @@
       <div class="header-content">
             <header>
               <nav>
-                <p>CONTENIDO</p>
-                <details open>
-                  <summary>
+                <p class="contenido-title">CONTENIDO</p>
+                <details>
+                  <summary class="pointer summary">
                     Setup
                   </summary>
                   <ol>
@@ -55,7 +55,7 @@
                   </ol>
                 </details>
                 <details>
-                  <summary>
+                  <summary class="pointer summary">
                     Conceptos esenciales del Desarrollo Web
                   </summary>
                   <ol>
@@ -80,7 +80,7 @@
                   </ol>
                 </details>
                 <details>
-                  <summary>
+                  <summary class="pointer summary">
                     Enlaces de diferentes vistas
                   </summary>
                   <ol>
@@ -113,7 +113,7 @@
     <div class="wrapper">
       <div class="main-content">
         <section class="section-content">
-          <h1>Curso esencial de HTML y CSS</h1>
+          <h1 class="title">Curso esencial de HTML y CSS</h1>
           <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
           <hr />
           <h2>Setup</h2>
@@ -227,7 +227,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer__container-p">
-        <p>© Kelvin Contreras 2023</p>
+        <p>© Ignacio Pinto 2023</p>
       </div>
       <div class="footer__container-social">
         <a href="https://www.instagram.com/juancms98/" target="_blank"><img src="./img/instagram.svg" alt="instagram"></a>
@@ -236,17 +236,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    const detailsList = document.querySelectorAll('details')
-    detailsList.forEach((details) => {
-      details.querySelector('summary').addEventListener('click', expand);
-    })
-
-    function expand() {
-      detailsList.forEach((details) => {
-      details.removeAttribute('open');
-      })
-    }
-  </script>
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
