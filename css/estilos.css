@@ -3,7 +3,7 @@
   --gray30: #212429;
   --gray20: #424242;
   --gray10: #616161;
-  --headline1: 'Roboto';
+  --headline1: 'Helvetica';
 }
 
 html {
@@ -30,11 +30,13 @@ body {
   block-size: 50px;
 }
 
-h1 {
+.title, h1 {
   font-size: 40px;
   margin-block-start: 20px;
   margin-block-end: 16px;
   font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* h1 + p {
@@ -48,11 +50,10 @@ hr {
 }
 
 h2 {
-  text-shadow: 7px 4px 5px blueviolet;
   font-size: 2em;
-  margin-block-start: 64px;
-  margin-block-end: 40px;
   font-weight: normal;
+  margin: 0;
+  padding: 10px;
 }
 
 h3 {
@@ -176,6 +177,10 @@ blockquote span::before {
   content: '-';
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .slider-container {
   display: block;
   /* block-size: 100px; */
@@ -273,11 +278,7 @@ blockquote span::before {
     font-weight: bold;
     line-height: 24px;
   }
-  h1 {
-    text-shadow: 7px 4px 5px blueviolet;
-    font-size: 60px;
-    margin-block-start: 64px;
-  }
+  
   .footer {
     background-color: var(--gray30);
     display: flex;
@@ -302,39 +303,3 @@ blockquote span::before {
     margin-inline: 22px;
   }
 }
-
-/* header {
-  width: 188px;
-  font-size: 14px;
-  color: var(--gray10);
-  position: absolute;
-  top: 64px;
-  left: -200px;
-}
-
-.header {
-  position: sticky;
-  top: 0;
-}
-
-.header-content {
-  position: relative;
-}
-
-header a {
-  color: var(--gray10);
-  text-decoration: none;
-}
-
-header a:hover {
-  color: var(--gray30);
-}
-
-header li {
-  margin-block-end: 16px;
-}
-
-nav details summary {
-  font-weight: bold;
-  line-height: 24px;
-} */
