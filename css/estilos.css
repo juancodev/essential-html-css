@@ -26,8 +26,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/fondohero.png);
-  /* background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/webdeveloper.jpg); */
+  background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/banner-html-css.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
