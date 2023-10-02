@@ -3,8 +3,7 @@
   --gray30: #212429;
   --gray20: #424242;
   --gray10: #616161;
-  --headline1: 'Roboto';
-}
+  --headline1: 'Roboto';}
 
 html {
   scroll-behavior: smooth;
@@ -14,10 +13,11 @@ body {
   margin: 0;
   color: var(--gray40);
   font-family: var(--headline1);
-}
+background-color: aqua;}
 
 .wrapper {
   max-inline-size: 902px;
+  
   margin: auto;
 }
 
@@ -31,6 +31,7 @@ body {
 }
 
 h1 {
+  font-family: 'Satisfy', cursive;
   font-size: 40px;
   margin-block-start: 20px;
   margin-block-end: 16px;
@@ -48,7 +49,7 @@ hr {
 }
 
 h2 {
-  text-shadow: 7px 4px 5px blueviolet;
+  text-shadow: 7px 4px 5px rgb(253, 6, 6);
   font-size: 2em;
   margin-block-start: 64px;
   margin-block-end: 40px;
@@ -63,7 +64,7 @@ h3 {
   position: relative;
 }
 
-header {
+header { background-color: rgb(255, 255, 255);
   margin-block-start: 20px;
   font-size: 14px;
   color: var(--gray10);
@@ -274,7 +275,7 @@ blockquote span::before {
     line-height: 24px;
   }
   h1 {
-    text-shadow: 7px 4px 5px blueviolet;
+    text-shadow: 7px 4px 5px #e70505;
     font-size: 60px;
     margin-block-start: 64px;
   }
